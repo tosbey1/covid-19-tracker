@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Cards, Chart, CountryPicker } from './components';
+import {Cards} from './components';
 import styles from './App.module.css';
 // curly braces because it's a named import
 import {fetchData } from './api';
@@ -20,8 +20,6 @@ class App extends React.Component {
             //style.container makes sure that you're picking from a specific container
             <div className={styles.container}>
                 <Cards data={data} />
-                <CountryPicker />
-                <Chart />
             </div>
         )
     }
